@@ -17,7 +17,7 @@ public class Calculator {
     /**
      * Metoda ce returneaza calculul matematic
      *
-     * @param numar1 - o variabila de tip int
+     * @param numar1
      * @param numar2 - o variabila de tip int
      * @param op - operator
      */
