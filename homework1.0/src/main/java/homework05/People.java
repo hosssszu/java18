@@ -2,6 +2,7 @@ package homework05;
 
 import java.io.Serializable;
 
+
 public class People implements Serializable {
 
     private int athleteNumber;
