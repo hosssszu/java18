@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.*;
 
+
 public class PeopleCSVReader implements Comparable<PeopleCSVReader> {
     Set<People> people = new TreeSet<>(new Comp());
 

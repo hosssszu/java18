@@ -2,6 +2,7 @@ package homework05;
 
 import java.io.Serializable;
 
+
 public class People implements Serializable {
 
     private int athleteNumber;
@@ -59,7 +60,7 @@ public class People implements Serializable {
         return count;
     }
 
-    //dislpaying the final time
+    //displaying the final time
     public String second3() {
 
         String someString[] = {firstShootingRange, secondShootingRange, thirdShootingRange};

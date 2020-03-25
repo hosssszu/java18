@@ -7,6 +7,7 @@ package homework05;
  * Each shooting range has 5 shot results. For every missed shot the athlete obtains a 10 second penalty which affects the final time-result.
  * Final standings are based on the time-results that have been updated with the shooting range results.
  *
+ *
  * @author Loránd
  */
 
