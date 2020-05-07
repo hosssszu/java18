@@ -125,6 +125,9 @@ public class Database {
         connection.commit();
     }
 
+    //INSERT INTO accommodation (id, type, bed_type, max_guests, description) VALUES (1, 'hotel', 'water', 3, 'desc');
+    //INSERT INTO accommodation (id, type, bed_type, max_guests, description) VALUES (2, 'hospice', 'water', 2, 'desc');
+    //INSERT INTO accommodation (id, type, bed_type, max_guests, description) VALUES (3, 'guesthouse', 'dican', 2, 'desc');
     public void insertAccommodation(Connection connection) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO accommodation (id, type, bed_type, max_guests, description) VALUES (?, ?, ?, ?, ?)");
         preparedStatement.setInt(1, 3);
@@ -136,6 +139,9 @@ public class Database {
         connection.commit();
     }
 
+    //INSERT INTO room_fair (id, value, season) VALUES (1, 200, 'all-season');
+    //INSERT INTO room_fair (id, value, season) VALUES (2, 170, 'all-season');
+    //INSERT INTO room_fair (id, value, season) VALUES (3, 150, 'all-season');
     public void insertRoom_fair(Connection connection) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO room_fair (id, value, season) VALUES (?, ?, ?)");
         preparedStatement.setInt(1, 1);
@@ -145,6 +151,11 @@ public class Database {
         connection.commit();
     }
 
+    //INSERT INTO accommodation_to_room_fair_relation (id, id_accommodation, id_room_fair) VALUES (1, 1, 1);
+    //INSERT INTO accommodation_to_room_fair_relation (id, id_accommodation, id_room_fair) VALUES (2, 2, 1);
+    //INSERT INTO accommodation_to_room_fair_relation (id, id_accommodation, id_room_fair) VALUES (3, 2, 3);
+    //INSERT INTO accommodation_to_room_fair_relation (id, id_accommodation, id_room_fair) VALUES (4, 3, 1);
+    //INSERT INTO accommodation_to_room_fair_relation (id, id_accommodation, id_room_fair) VALUES (5, 3, 2);
     public void insertAccommodation_to_room_fair_relation(Connection connection) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO accommodation_to_room_fair_relation (id, id_accommodation, id_room_fair) VALUES (?, ?, ?)");
         preparedStatement.setInt(1, 3);
