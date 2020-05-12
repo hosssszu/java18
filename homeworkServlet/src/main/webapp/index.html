@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Main Page</title>
+</head>
+<body>
+
+<h1>Welcome!</h1>
+
+To add a car please complete the fields
+
+<form action="Save" method="post">
+    <table>
+        <tr>
+            <td>Model:</td>
+            <td><input type="text" name="name"></td>
+
+            <td>Power:</td>
+            <td><input type="number" name="power"></td>
+
+            <td>Mileage:</td>
+            <td><input type="number" name="mileage"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Add car"></td>
+        </tr>
+    </table>
+</form>
+
+To check the list press the view button
+
+<form action="view" method="get">
+    <td colspan="2"><input type="submit" value="View Cars"></td>
+</form>
+
+</body>
+</html>
