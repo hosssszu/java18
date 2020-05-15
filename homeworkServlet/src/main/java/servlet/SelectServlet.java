@@ -13,11 +13,11 @@ public class Select extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         PrintWriter out = response.getWriter();
-        String f = request.getParameter("id");
+        String id = request.getParameter("id");
 
-        out.println("<h1> Number " + f + " is up to edit!</h1>");
+        out.println("<h1> Number " + id + " is up to edit!</h1>");
         out.println("<form action=/homework/Edit <colspan=1>" +
-                "<input type=hidden value=" + f + " name=id>" +
+                "<input type=hidden value=" + id + " name=id>" +
                 "Choose the field:" +
                 "<select name=data>" +
                 "<option value=Model>Model</option>" +
